@@ -1,0 +1,37 @@
+
+
+name: No Duplicates Tweet CSV Builder
+
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  runscript:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+
+      - name: Run the script
+        run: |
+          chmod -R 777 .
+          echo "Permissions have been updated"
+          pip install --upgrade twarc
+          echo "TWARC has been installed"
+          pip3 install --upgrade twarc-csv
+          echo "TWARC CSV tool has been installed"
+          twarc2 --bearer-token "${{ secrets.BEARER_TOKEN }}" --consumer-key "${{ secrets.CONSUMER_KEY }}" --consumer-secret "${{ secrets.CONSUMER_SECRET }}" --access-token "${{ secrets.ACCESS_TOKEN }}" --access-token-secret "${{ secrets.ACCESS_TOKEN_SECRET }}" csv TWARCResults.json1 TWARCResultsNoDuplicates.csv
+          echo "CSV builder has run"
+
+      - name: Commit changes
+        run: |
+          git config user.name 'DanielBrett'
+          git config user.email 'dbrett@brocku.ca'
+          git add .
+          git commit -m "No Duplicates CSV Builder has run"
+          git push
