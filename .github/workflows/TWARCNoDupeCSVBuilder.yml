@@ -27,7 +27,7 @@ jobs:
           echo "TWARC CSV tool has been installed"
           twarc2 --bearer-token "${{ secrets.BEARER_TOKEN }}" --consumer-key "${{ secrets.CONSUMER_KEY }}" --consumer-secret "${{ secrets.CONSUMER_SECRET }}" --access-token "${{ secrets.ACCESS_TOKEN }}" --access-token-secret "${{ secrets.ACCESS_TOKEN_SECRET }}" csv TWARCResults.json1 TWARCResultsNoDuplicates.csv
           echo "CSV builder has run"
-          IDAdder.py
+          python3 IDAdder.py
           
       - name: Commit changes
         run: |
