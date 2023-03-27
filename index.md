@@ -53,3 +53,11 @@ This repository houses the current version of a basic twitter harvesting tool th
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
   vizElement.parentNode.insertBefore(scriptElement, vizElement);                
 </script>
+
+
+
+----
+  
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+
+
