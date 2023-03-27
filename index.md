@@ -3,9 +3,11 @@
 This repository houses the current version of a basic twitter harvesting tool that grabs tweets based on a keyword search using the TWARC tool.  The harvester currently runs once a week and grabs the previous weeks tweets.
 
 # Current Data Details
-  
-  
-  
+
+The data below reflects the contents of the data file after being cleaned to remove duplicate lines in the CSV file.  The data is current as of **March 21st, 2023**.
+
+
+<div>
 <div class='tableauPlaceholder' id='viz1679686355530' style='position: relative'>
    <noscript>
      <a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HarvesterData&#47;Dashboard1&#47;1_rss.png' style='border: none' />
@@ -53,33 +55,10 @@ This repository houses the current version of a basic twitter harvesting tool th
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
   vizElement.parentNode.insertBefore(scriptElement, vizElement);                
 </script>
+</div>
 
 
 
 ----
   
 **This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-**This tool is brought to you by the Brock University Digital Scholarship Lab.**
-
-
