@@ -59,5 +59,27 @@ This repository houses the current version of a basic twitter harvesting tool th
 ----
   
 **This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
+**This tool is brought to you by the Brock University Digital Scholarship Lab.**
 
 
