@@ -1,6 +1,6 @@
 # DSL Data Harvester
 
-This repository houses the current version of a basic twitter harvesting tool that grabs tweets based on a keyword search using the TWARC tool.  The harvester currently runs once a week and grabs the previous weeks tweets.
+This repository houses the current version of a basic twitter harvesting tool that grabs tweets based on a keyword search using the TWARC tool.  The harvester currently runs once a week and grabs the previous weeks tweets.  The search term for this data is "Digital Scholarship"
 
 # Current Data Details
 
