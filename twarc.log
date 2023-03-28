@@ -290,3 +290,5 @@
 2023-03-26 23:50:37,139 INFO No more results for search digital scholarship.
 2023-03-26 23:50:37,771 INFO using config /home/runner/.config/twarc/config
 2023-03-26 23:50:37,771 INFO creating HTTP session headers for app auth.
+2023-03-28 13:39:22,504 INFO using config /home/runner/.config/twarc/config
+2023-03-28 13:39:22,504 INFO creating HTTP session headers for app auth.
