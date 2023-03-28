@@ -1,6 +1,6 @@
 import csv
 
-with open('TWARCResultsNoDuplicates.csv') as inp, open('temp.csv', 'w') as out:
+with open('TWARCResultsNoDuplicates.csv') as inp, open('TWARCResultsNoDuplicatesID.csv', 'w') as out:
     reader = csv.reader(inp)
     writer = csv.writer(out, delimiter=',')
     #No need to use `insert(), `append()` simply use `+` to concatenate two lists.
