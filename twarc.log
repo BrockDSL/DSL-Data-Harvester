@@ -646,3 +646,11 @@
 2023-07-09 23:50:38,204 INFO creating HTTP session headers for app auth.
 2023-07-09 23:50:54,484 INFO using config /home/runner/.config/twarc/config
 2023-07-09 23:50:54,484 INFO creating HTTP session headers for app auth.
+2023-07-14 15:09:45,123 INFO using config /home/runner/.config/twarc/config
+2023-07-14 15:09:45,123 INFO creating HTTP session headers for app auth.
+2023-07-14 15:09:45,222 INFO getting ('https://api.twitter.com/2/tweets/search/recent',) {'params': {'expansions': 'author_id,in_reply_to_user_id,referenced_tweets.id,referenced_tweets.id.author_id,entities.mentions.username,attachments.poll_ids,attachments.media_keys,geo.place_id,edit_history_tweet_ids', 'tweet.fields': 'attachments,author_id,context_annotations,conversation_id,created_at,entities,geo,id,in_reply_to_user_id,lang,public_metrics,text,possibly_sensitive,referenced_tweets,reply_settings,source,withheld,edit_controls,edit_history_tweet_ids', 'user.fields': 'created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,verified_type,withheld', 'media.fields': 'alt_text,duration_ms,height,media_key,preview_image_url,type,url,width,variants,public_metrics', 'poll.fields': 'duration_minutes,end_datetime,id,options,voting_status', 'place.fields': 'contained_within,country,country_code,full_name,geo,id,name,place_type', 'start_time': None, 'end_time': None, 'query': 'digital scholarship', 'max_results': 100}}
+2023-07-14 15:09:45,401 ERROR Unexpected HTTP response: <Response [403]>
+2023-07-14 15:09:46,213 INFO using config /home/runner/.config/twarc/config
+2023-07-14 15:09:46,213 INFO creating HTTP session headers for app auth.
+2023-07-14 15:10:04,591 INFO using config /home/runner/.config/twarc/config
+2023-07-14 15:10:04,592 INFO creating HTTP session headers for app auth.
