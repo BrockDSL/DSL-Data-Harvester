@@ -1,0 +1,54 @@
+
+
+name: Weekly TWARC Harvester
+
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  runscript:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+
+      - name: Install programs
+        run: |
+          chmod -R 777 .
+          echo "Permissions have been updated"
+          pip install --upgrade pip
+          echo "pip has been updated"
+          pip install --upgrade twarc
+          echo "TWARC has been installed"
+          twarc configure --consumer-key "${{ secrets.CONSUMER_KEY }}" --consumer-secret "${{ secrets.CONSUMER_SECRET }}" --access-token "${{ secrets.ACCESS_TOKEN }}" --access-token-secret "${{ secrets.ACCESS_TOKEN_SECRET }}"
+          
+      - name: Run TWARC scrape
+        run: |
+          twarc2 --consumer-key "${{ secrets.CONSUMER_KEY }}" --consumer-secret "${{ secrets.CONSUMER_SECRET }}" --access-token "${{ secrets.ACCESS_TOKEN }}" --access-token-secret "${{ secrets.ACCESS_TOKEN_SECRET }}" search "digital scholarship" >> TWARCResults.json1
+          echo "TWARC has run on digital scholarship topic"
+          
+      - name: Convert results to CSV
+        run: |
+          twarc2 --bearer-token "${{ secrets.BEARER_TOKEN }}" --consumer-key "${{ secrets.CONSUMER_KEY }}" --consumer-secret "${{ secrets.CONSUMER_SECRET }}" --access-token "${{ secrets.ACCESS_TOKEN }}" --access-token-secret "${{ secrets.ACCESS_TOKEN_SECRET }}" csv --allow-duplicates TWARCResults.json1 TWARCResultsWithDuplicates.csv
+          echo "CSV with duplicates included has been created"
+          twarc2 --bearer-token "${{ secrets.BEARER_TOKEN }}" --consumer-key "${{ secrets.CONSUMER_KEY }}" --consumer-secret "${{ secrets.CONSUMER_SECRET }}" --access-token "${{ secrets.ACCESS_TOKEN }}" --access-token-secret "${{ secrets.ACCESS_TOKEN_SECRET }}" csv TWARCResults.json1 TWARCResultsNoDuplicates.csv
+          echo "CSV with duplicates stripped out created"
+          
+          
+      - name: Make version with ID column
+        run: |
+          python3 IDAdder.py
+          echo "Version of CSV without dupes made with extra ID field"
+
+      - name: Commit changes
+        run: |
+          git config user.name 'DanielBrett'
+          git config user.email 'dbrett@brocku.ca'
+          git add .
+          git commit -m "Twitter harvester has run"
+          git push
