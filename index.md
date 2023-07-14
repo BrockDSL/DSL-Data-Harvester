@@ -4,7 +4,7 @@ This repository houses the current version of a basic twitter harvesting tool th
 
 # Current Data Details
 
-The data below reflects the contents of the data file after being cleaned to remove duplicate lines in the CSV file.  The data is current as of **May 1st, 2023**.
+The data below reflects the contents of the data file after being cleaned to remove duplicate lines in the CSV file.  The data is current as of **June 4th, 2023**.
   
   
 
