@@ -25,11 +25,10 @@ jobs:
           echo "pip has been updated"
           pip install --upgrade twarc
           echo "TWARC has been installed"
-          twarc configure --consumer-key "${{ secrets.CONSUMER_KEY }}" --consumer-secret "${{ secrets.CONSUMER_SECRET }}" --access-token "${{ secrets.ACCESS_TOKEN }}" --access-token-secret "${{ secrets.ACCESS_TOKEN_SECRET }}"
-          
+      
       - name: Run TWARC scrape
         run: |
-          twarc2 --consumer-key "${{ secrets.CONSUMER_KEY }}" --consumer-secret "${{ secrets.CONSUMER_SECRET }}" --access-token "${{ secrets.ACCESS_TOKEN }}" --access-token-secret "${{ secrets.ACCESS_TOKEN_SECRET }}" search "digital scholarship" >> TWARCResults.json1
+          twarc --consumer-key "${{ secrets.CONSUMER_KEY }}" --consumer-secret "${{ secrets.CONSUMER_SECRET }}" --access-token "${{ secrets.ACCESS_TOKEN }}" --access-token-secret "${{ secrets.ACCESS_TOKEN_SECRET }}" search "digital scholarship" > TWARCResults.json1
           echo "TWARC has run on digital scholarship topic"
           
       - name: Convert results to CSV
